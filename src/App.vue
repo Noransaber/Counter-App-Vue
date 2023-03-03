@@ -13,6 +13,7 @@ let count = ref(0);
     <h1>{{ count }}</h1>
     <button @click='count++'>+</button>
     <button @click='count--'>-</button>
+    <button @click='count = 0'> D</button>
   </div>
   </div>
 </template>
@@ -26,8 +27,25 @@ let count = ref(0);
   display: flex;
   justify-content: center;
   align-items: center;
+  background-size: cover;
 }
 .center{
   text-align: center;
+}
+button {
+  margin-right: 10px;
+  border-radius: 15px;
+  border: 1px solid white;
+  background-color: black;
+  color: white;
+  width: 20px;
+  height: 20px;
+  align-items: center;
+  text-align: center;
+
+}
+button:hover{
+  color: yellow;
+  cursor: pointer;
 }
 </style>
